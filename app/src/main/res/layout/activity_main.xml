@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F1F22"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvGrupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grupo X"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96" />
+
+    <CalendarView
+        android:id="@+id/calendario"
+        android:layout_width="407dp"
+        android:layout_height="301dp"
+        android:foregroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <Button
+        android:id="@+id/btnRegistrarPeriodo"
+        android:layout_width="222dp"
+        android:layout_height="62dp"
+        android:backgroundTint="#E26058"
+        android:text="Registrar periodo"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.763" />
+
+    <ImageView
+        android:id="@+id/imgAjustes"
+        android:layout_width="54dp"
+        android:layout_height="57dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/engranaje" />
+
+    <ImageView
+        android:id="@+id/imgPerfil"
+        android:layout_width="54dp"
+        android:layout_height="57dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/mujer" />
+
+    <TextView
+        android:id="@+id/tvNombreUsuario"
+        android:layout_width="252dp"
+        android:layout_height="25dp"
+        android:text="Nombre de usuario"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <TextView
+        android:id="@+id/tvSintomas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Síntomas"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.544" />
+
+    <HorizontalScrollView
+        android:layout_width="413dp"
+        android:layout_height="86dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.648">
+
+        <LinearLayout
+            android:layout_width="413dp"
+            android:layout_height="73dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.834">
+
+            <Switch
+                android:id="@+id/swDolorDeCabeza"
+                android:layout_width="155dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Dolor de cabeza"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tvBarra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-38dp"
+                android:layout_marginLeft="163dp"
+                android:text="|"
+                android:textColor="#FFFFFF">
+            </TextView>
+
+            <Switch
+                android:id="@+id/swColicos"
+                android:layout_width="95dp"
+                android:layout_height="53dp"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="-35dp"
+                android:text="Cólicos"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tvBarra2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-38dp"
+                android:layout_marginLeft="267dp"
+                android:text="|"
+                android:textColor="#FFFFFF">
+            </TextView>
+
+            <Switch
+                android:id="@+id/swAcne"
+                android:layout_width="95dp"
+                android:layout_height="53dp"
+                android:layout_marginLeft="285dp"
+                android:layout_marginTop="-35dp"
+                android:text="Acné"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tvBarra3"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="-38dp"
+                android:layout_marginLeft="387dp"
+                android:text="|"
+                android:textColor="#FFFFFF">
+            </TextView>
+
+            <Switch
+                android:id="@+id/swFatiga"
+                android:layout_width="95dp"
+                android:layout_height="53dp"
+                android:layout_marginLeft="395dp"
+                android:layout_marginTop="-36dp"
+                android:text="Fatiga"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tvBarra4"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="-38dp"
+                android:layout_marginLeft="497dp"
+                android:text="|"
+                android:textColor="#FFFFFF">
+            </TextView>
+
+            <Switch
+                android:id="@+id/swDolorDeSenos"
+                android:layout_width="155dp"
+                android:layout_height="53dp"
+                android:layout_marginLeft="515dp"
+                android:layout_marginTop="-35dp"
+                android:text="Dolor de senos"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tvUltimoRegistrado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Último perido registrado"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <TextView
+        android:id="@+id/tvDiaRegistrado"
+        android:layout_width="191dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="16dp"
+        android:text="Dia"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUltimoRegistrado"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvProximoPeriodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Próximo periodo"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <TextView
+        android:id="@+id/tvDiaProximo"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:text="Dia"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProximoPeriodo"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
