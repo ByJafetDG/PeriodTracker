@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#1F1F22">
@@ -10,7 +11,7 @@
         android:layout_width="154dp"
         android:layout_height="26dp"
         android:layout_marginTop="28dp"
-        android:layout_marginBottom="196dp"
+        android:layout_marginBottom="188dp"
         android:text="Ya tienes cuenta?"
         android:textAlignment="textEnd"
         android:textColor="#FFFFFF"
@@ -19,14 +20,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.147"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnIniciar"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="6dp"
         android:layout_height="33dp"
-        android:layout_marginBottom="196dp"
+        android:layout_marginBottom="188dp"
         android:text="|"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
@@ -34,7 +34,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnIniciar"
         app:layout_constraintVertical_bias="0.1" />
 
     <TextView
@@ -42,7 +41,7 @@
         android:layout_width="123dp"
         android:layout_height="26dp"
         android:layout_marginTop="28dp"
-        android:layout_marginBottom="196dp"
+        android:layout_marginBottom="188dp"
         android:text="Inicia sesión"
         android:textColor="#4992E1"
         android:textSize="16sp"
@@ -50,7 +49,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.763"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnIniciar"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -79,17 +77,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.96" />
-
-    <Button
-        android:id="@+id/btnSimular2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="simular"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.872" />
 
     <EditText
         android:id="@+id/etContrasenna"
@@ -134,4 +121,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.056"
         app:srcCompat="@drawable/ciclomenstrual" />
+
+    <ImageView
+        android:id="@+id/ivRegisterGoogle"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.821"
+        app:srcCompat="@drawable/google" />
 </androidx.constraintlayout.widget.ConstraintLayout>

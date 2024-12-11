@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     android:background="#1F1F22">
 
+    <ImageView
+        android:id="@+id/ivLoginGoogle"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.821"
+        app:srcCompat="@drawable/google" />
+
     <EditText
         android:id="@+id/etCorreo"
         android:layout_width="346dp"
@@ -66,6 +78,21 @@
         app:layout_constraintVertical_bias="0.96" />
 
     <TextView
+        android:id="@+id/tvClickAqui"
+        android:layout_width="123dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="28dp"
+        android:text="Registrate aquí"
+        android:textColor="#4992E1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIniciar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
         android:id="@+id/tvNoTienes"
         android:layout_width="154dp"
         android:layout_height="26dp"
@@ -77,21 +104,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.147"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnIniciar"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/tvClickAqui"
-        android:layout_width="123dp"
-        android:layout_height="26dp"
-        android:layout_marginTop="28dp"
-        android:text="Registrate aquí"
-        android:textColor="#4992E1"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.756"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnIniciar"
         app:layout_constraintVertical_bias="0.0" />
