@@ -7,11 +7,26 @@
     android:background="#1F1F22">
 
     <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="346dp"
+        android:layout_height="36dp"
+        android:text="Registrarse"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.294" />
+
+    <TextView
         android:id="@+id/tvSiTienes"
         android:layout_width="154dp"
         android:layout_height="26dp"
         android:layout_marginTop="28dp"
-        android:layout_marginBottom="188dp"
+        android:layout_marginBottom="200dp"
         android:text="Ya tienes cuenta?"
         android:textAlignment="textEnd"
         android:textColor="#FFFFFF"
@@ -26,7 +41,7 @@
         android:id="@+id/textView4"
         android:layout_width="6dp"
         android:layout_height="33dp"
-        android:layout_marginBottom="188dp"
+        android:layout_marginBottom="200dp"
         android:text="|"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
@@ -41,7 +56,7 @@
         android:layout_width="123dp"
         android:layout_height="26dp"
         android:layout_marginTop="28dp"
-        android:layout_marginBottom="188dp"
+        android:layout_marginBottom="200dp"
         android:text="Inicia sesión"
         android:textColor="#4992E1"
         android:textSize="16sp"
@@ -119,7 +134,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.056"
+        app:layout_constraintVertical_bias="0.029"
         app:srcCompat="@drawable/ciclomenstrual" />
 
     <ImageView
@@ -131,6 +146,6 @@
         app:layout_constraintHorizontal_bias="0.105"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.821"
+        app:layout_constraintVertical_bias="0.837"
         app:srcCompat="@drawable/google" />
 </androidx.constraintlayout.widget.ConstraintLayout>

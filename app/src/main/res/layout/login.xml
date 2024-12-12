@@ -15,7 +15,7 @@
         app:layout_constraintHorizontal_bias="0.105"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.821"
+        app:layout_constraintVertical_bias="0.837"
         app:srcCompat="@drawable/google" />
 
     <EditText
@@ -82,14 +82,14 @@
         android:layout_width="123dp"
         android:layout_height="26dp"
         android:layout_marginTop="28dp"
+        android:layout_marginBottom="200dp"
         android:text="Registrate aquí"
         android:textColor="#4992E1"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintHorizontal_bias="0.763"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnIniciar"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -97,6 +97,7 @@
         android:layout_width="154dp"
         android:layout_height="26dp"
         android:layout_marginTop="28dp"
+        android:layout_marginBottom="200dp"
         android:text="No tienes cuenta?"
         android:textAlignment="textEnd"
         android:textColor="#FFFFFF"
@@ -105,13 +106,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.147"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnIniciar"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="6dp"
         android:layout_height="33dp"
+        android:layout_marginBottom="200dp"
         android:text="|"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
@@ -119,19 +120,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnIniciar"
         app:layout_constraintVertical_bias="0.1" />
-
-    <Button
-        android:id="@+id/btnSimular"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="simular"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.872" />
 
     <ImageView
         android:id="@+id/imgIcon"
@@ -142,6 +131,21 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.056"
+        app:layout_constraintVertical_bias="0.029"
         app:srcCompat="@drawable/ciclomenstrual" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="346dp"
+        android:layout_height="36dp"
+        android:text="Iniciar Sesión"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.294" />
 </androidx.constraintlayout.widget.ConstraintLayout>
