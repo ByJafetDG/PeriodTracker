@@ -2,7 +2,9 @@ package com.example.periodtracker
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -13,6 +15,7 @@ class Perfil : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var tvNombreUsuario: TextView
     private lateinit var btnCerrarSesion: Button
+    private lateinit var ivAtras: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,6 +23,14 @@ class Perfil : AppCompatActivity() {
 
         // Inicializar FirebaseAuth
         auth = FirebaseAuth.getInstance()
+
+        ivAtras = findViewById<ImageView>(R.id.ivAtras)
+
+        ivAtras.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        })
 
         btnCerrarSesion = findViewById<Button>(R.id.btnCerrarSesion)
         // Referenciar el TextView

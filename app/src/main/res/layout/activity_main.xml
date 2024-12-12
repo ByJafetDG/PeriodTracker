@@ -221,10 +221,10 @@
 
     <TextView
         android:id="@+id/tvDiaRegistrado"
-        android:layout_width="191dp"
-        android:layout_height="23dp"
+        android:layout_width="189dp"
+        android:layout_height="55dp"
         android:layout_marginTop="16dp"
-        android:text="Dia"
+        android:text="Aún no hay día registrado"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
@@ -251,16 +251,16 @@
 
     <TextView
         android:id="@+id/tvDiaProximo"
-        android:layout_width="130dp"
-        android:layout_height="25dp"
+        android:layout_width="168dp"
+        android:layout_height="53dp"
         android:layout_marginTop="16dp"
-        android:text="Dia"
+        android:text="Registra un día"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvProximoPeriodo"
         app:layout_constraintVertical_bias="0.0" />
