@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.96" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgPerfil"
         android:layout_width="141dp"
         android:layout_height="128dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,7 +31,7 @@
         app:srcCompat="@drawable/mujer" />
 
     <TextView
-        android:id="@+id/tvNombreDeUsuario"
+        android:id="@+id/tvNombreDeUsuarioH"
         android:layout_width="355dp"
         android:layout_height="25dp"
         android:text="Nombre de usuario"
@@ -44,54 +44,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.297" />
 
-    <Button
-        android:id="@+id/btnHistorial"
-        android:layout_width="341dp"
-        android:layout_height="56dp"
-        android:backgroundTint="#E26058"
-        android:text="Historial de periodos"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.441" />
-
-    <Button
-        android:id="@+id/btnHistorialSintomas"
-        android:layout_width="341dp"
-        android:layout_height="56dp"
-        android:backgroundTint="#E26058"
-        android:text="Historial de síntomas"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.561" />
-
-    <Button
-        android:id="@+id/btnCerrarSesion"
-        android:layout_width="341dp"
-        android:layout_height="56dp"
-        android:backgroundTint="#E26058"
-        android:text="Cerrar Sesión"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.673" />
-
     <ImageView
-        android:id="@+id/ivAtras"
+        android:id="@+id/ivAtrasH"
         android:layout_width="50dp"
         android:layout_height="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -101,4 +55,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@drawable/atras" />
+
+    <ListView
+        android:id="@+id/lvHistorial"
+        android:layout_width="407dp"
+        android:layout_height="408dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.773" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

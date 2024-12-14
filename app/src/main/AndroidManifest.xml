@@ -32,6 +32,11 @@
         <activity
             android:name=".Perfil">
         </activity>
+
+        <activity
+            android:name=".Historial">
+        </activity>
+
     </application>
 
 </manifest>

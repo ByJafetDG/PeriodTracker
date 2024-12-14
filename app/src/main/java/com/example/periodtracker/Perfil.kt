@@ -17,6 +17,8 @@ class Perfil : AppCompatActivity() {
     private lateinit var btnCerrarSesion: Button
     private lateinit var ivAtras: ImageView
 
+    private lateinit var bntHistorial: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.perfil)
@@ -35,6 +37,14 @@ class Perfil : AppCompatActivity() {
         btnCerrarSesion = findViewById<Button>(R.id.btnCerrarSesion)
         // Referenciar el TextView
         tvNombreUsuario = findViewById(R.id.tvNombreDeUsuario)
+
+        bntHistorial = findViewById(R.id.btnHistorial) // Inicializar el botón
+
+        // Configurar el botón bntHistorial
+        bntHistorial.setOnClickListener {
+            val intent = Intent(this, Historial::class.java)
+            startActivity(intent) // Redirige a la actividad Historial
+        }
 
         // Obtener y mostrar el nombre del usuario
         mostrarNombreUsuario()

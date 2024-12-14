@@ -50,7 +50,6 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
 
-
-    //implementation ("com.github.prolificinteractive:material-calendarview:2.0.1")
+    implementation("com.google.android.gms:play-services-auth:20.6.0")
 
 }
