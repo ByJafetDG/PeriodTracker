@@ -61,21 +61,6 @@
         app:layout_constraintVertical_bias="0.441" />
 
     <Button
-        android:id="@+id/btnHistorialSintomas"
-        android:layout_width="341dp"
-        android:layout_height="56dp"
-        android:backgroundTint="#E26058"
-        android:text="Historial de síntomas"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.561" />
-
-    <Button
         android:id="@+id/btnCerrarSesion"
         android:layout_width="341dp"
         android:layout_height="56dp"
@@ -88,7 +73,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.673" />
+        app:layout_constraintVertical_bias="0.557" />
 
     <ImageView
         android:id="@+id/ivAtras"

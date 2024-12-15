@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">PeriodTracker</string>
-    <string name="default_web_client_id">your-client-id.apps.googleusercontent.com</string>
+
+    //Para conseguir tui default_web_client_id hay que ir a Google cloud console,
+    selecccionar el proyecto, buscar en el apartado APIs y servicios, luego en OAuth 2.0
+    aparecerá tu id
+    <string name="default_web_client_id">658333233887-ic61poknafe7ip3fbnin6h25e07qbmnd.apps.googleusercontent.com</string>
 </resources>
